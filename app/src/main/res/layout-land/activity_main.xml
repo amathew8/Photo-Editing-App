@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E6491"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/introTitle"
+        android:layout_width="377dp"
+        android:layout_height="118dp"
+        android:fontFamily="@font/lato_black"
+        android:text="EDIT"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.183" />
+
+    <Button
+        android:id="@+id/cameraRollButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="147dp"
+        android:layout_height="119dp"
+        android:background="#0E6491"
+        android:drawableTop="@drawable/photo_album_small"
+        android:fontFamily="@font/lato_black"
+        android:onClick="onCameraRollButtonClicked"
+        android:text="PHOTOS"
+        android:textColor="#FBFBFB"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58" />
+
+    <Button
+        android:id="@+id/cameraButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0E6491"
+        android:drawableTop="@drawable/camera_small"
+        android:fontFamily="@font/lato_black"
+        android:onClick="onCameraButtonClicked"
+        android:text="CAMERA"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.328"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58" />
+
+    <Button
+        android:id="@+id/tutorialsButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="147dp"
+        android:layout_height="124dp"
+        android:background="#0E6491"
+        android:drawableTop="@drawable/tutorial_small"
+        android:fontFamily="@font/lato_black"
+        android:text="TUTORIALS"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.694"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.584" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
